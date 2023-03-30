@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+body button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+body .game {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  margin: auto;
+  background: url(img/findWallyBg.jpg);
+  background-size: cover;
+}
+body .game .header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+body .game .header .whereiswally {
+  width: 300px;
+  position: absolute;
+  left: 25%;
+  top: 15px;
+}
+body .game .header .game-button {
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-size: 34px;
+}
+body .game .header .game-button :hover {
+  transform: scale(1.1);
+}
+body .game .header .game-timer {
+  width: 100px;
+  background-color: white;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-size: 32px;
+  margin-top: 8px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: auto;
+  visibility: hidden;
+}
+body .game .game-field {
+  position: relative;
+  width: 1660px;
+  height: 100%;
+  margin-top: 180px;
+}
+body .game .game-field .wally {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: auto;
+  -webkit-user-drag: none;
+}
+body .game .game-field .wally-border {
+  background-color: white;
+  border: 1px solid white;
+  padding: 5px;
+  border-radius: 40%;
+}
+body .pop-up {
+  position: absolute;
+  display: block;
+  width: 800px;
+  height: 340px;
+  padding: 20px;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.5647058824);
+  border-radius: 20px;
+  color: white;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+body .pop-up .pop-up-refresh {
+  width: 60px;
+  height: 60px;
+  font-size: 34px;
+  background-color: white;
+  border-radius: 50%;
+}
+body .pop-up .pop-up-message {
+  display: block;
+  font-size: 38px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: auto;
+}
+body .pop-up-hide {
+  display: none;
+}/*# sourceMappingURL=style.css.map */

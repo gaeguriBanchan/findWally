@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  // display: flex;
+  button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  .game {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    background: url(img/findWallyBg.jpg);
+    background-size: cover;
+    .header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      .whereiswally{
+        width: 300px;
+        position: absolute;
+        left: 25%;
+        top: 15px;
+      }
+      .game-button {
+        width: 60px;
+        height: 60px;
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 10px;
+        font-size: 34px;
+        :hover {
+          transform: scale(1.1);
+        }
+        .fa-regular {
+        }
+      }
+      .game-timer {
+        // visibility: hidden;
+        width: 100px;
+        background-color: white;
+        text-align: center;
+        border: 1px solid black;
+        border-radius: 10px;
+        font-size: 32px;
+        margin-top: 8px;
+        user-select: none;
+        cursor: auto;
+        visibility: hidden;
+      }
+    }
+    .game-field {
+      position: relative;
+      width: 1660px;
+      height: 100%;
+      margin-top: 180px;
+      // background-color: aqua;
+      .wally {
+        user-select: none;
+        cursor: auto;
+        -webkit-user-drag: none;
+      }
+      .wally-border {
+        background-color: white;
+        border: 1px solid white;
+        padding: 5px;
+        border-radius: 40%;
+      }
+    }
+  }
+  .pop-up {
+    position: absolute;
+    display: block;
+    width: 800px;
+    height: 340px;
+    padding: 20px;
+    margin: auto;
+    background-color: #00000090;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    .pop-up-refresh {
+      width: 60px;
+      height: 60px;
+      font-size: 34px;
+      background-color: white;
+      border-radius: 50%;
+      .fa-solid {
+      }
+    }
+    .pop-up-message {
+      display: block;
+      font-size: 38px;
+      user-select: none;
+      cursor: auto;
+    }
+  }
+  .pop-up-hide {
+    display: none;
+  }
+}
