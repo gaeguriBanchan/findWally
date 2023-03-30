@@ -56,7 +56,7 @@ body .game .header .game-timer {
 }
 body .game .game-field {
   position: relative;
-  width: 1660px;
+  width: 90%;
   height: 100%;
   margin-top: 180px;
 }
