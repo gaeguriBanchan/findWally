@@ -2,7 +2,7 @@
 
 const wallySize = 90;
 const wallyCount = 1;
-const gameDuration = 5;
+const gameDuration = 30;
 
 const field = document.querySelector('.game-field');
 const fieldRect = field.getBoundingClientRect();
